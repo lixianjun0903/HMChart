@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-pU-FW9">
+                                <rect key="frame" x="10" y="20" width="580" height="30"/>
+                                <color key="backgroundColor" red="0.48235294220000002" green="0.78039217000000005" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L0W-to-HLu"/>
+                                </constraints>
+                                <state key="normal" title="柱形图"/>
+                                <connections>
+                                    <action selector="addBarChartView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rd4-H7-kfL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xf3-qj-fra">
+                                <rect key="frame" x="10" y="60" width="580" height="30"/>
+                                <color key="backgroundColor" red="0.48235294220000002" green="0.78039217000000005" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Wm-yI-R2t"/>
+                                </constraints>
+                                <state key="normal" title="折线图"/>
+                                <connections>
+                                    <action selector="addBrokenLineChartView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4w-D9-8KL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNM-3i-FqR">
+                                <rect key="frame" x="10" y="100" width="580" height="30"/>
+                                <color key="backgroundColor" red="0.48235294220000002" green="0.78039217000000005" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="v1E-eC-Z8A"/>
+                                </constraints>
+                                <state key="normal" title="饼状图"/>
+                                <connections>
+                                    <action selector="addPieChartView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKa-kC-9dX"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WU5-hL-XkE">
+                                <rect key="frame" x="30" y="140" width="540" height="450"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WU5-hL-XkE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="0q9-by-N31"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WU5-hL-XkE" secondAttribute="bottom" constant="10" id="9NY-uT-afz"/>
+                            <constraint firstAttribute="trailing" secondItem="BNM-3i-FqR" secondAttribute="trailing" constant="10" id="CFw-Lq-4bY"/>
+                            <constraint firstItem="Xf3-qj-fra" firstAttribute="top" secondItem="bwT-pU-FW9" secondAttribute="bottom" constant="10" id="CwP-sL-6lJ"/>
+                            <constraint firstItem="Xf3-qj-fra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="JuX-UG-0Ad"/>
+                            <constraint firstAttribute="trailing" secondItem="Xf3-qj-fra" secondAttribute="trailing" constant="10" id="MOi-cs-P44"/>
+                            <constraint firstItem="BNM-3i-FqR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="SEP-E0-1y2"/>
+                            <constraint firstAttribute="trailing" secondItem="bwT-pU-FW9" secondAttribute="trailing" constant="10" id="X1F-L5-l9G"/>
+                            <constraint firstItem="BNM-3i-FqR" firstAttribute="top" secondItem="Xf3-qj-fra" secondAttribute="bottom" constant="10" id="gYf-Hc-dTZ"/>
+                            <constraint firstItem="WU5-hL-XkE" firstAttribute="top" secondItem="BNM-3i-FqR" secondAttribute="bottom" constant="10" id="hce-NK-zs3"/>
+                            <constraint firstItem="bwT-pU-FW9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iv6-P3-N88"/>
+                            <constraint firstItem="bwT-pU-FW9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="rxx-ae-nI2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WU5-hL-XkE" secondAttribute="trailing" constant="10" id="wd0-aA-IUM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="WU5-hL-XkE" id="cQM-HN-KXQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="418"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,11 @@
 		0409B8FE1C4794BD00910DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409B8FC1C4794BD00910DF7 /* Main.storyboard */; };
 		0409B9001C4794BD00910DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0409B8FF1C4794BD00910DF7 /* Assets.xcassets */; };
 		0409B9031C4794BD00910DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409B9011C4794BD00910DF7 /* LaunchScreen.storyboard */; };
+		0409B90D1C47951F00910DF7 /* HMChartBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409B90C1C47951F00910DF7 /* HMChartBackgroundView.m */; };
+		0409B9101C4797FB00910DF7 /* HMEndPointButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409B90F1C4797FB00910DF7 /* HMEndPointButton.m */; };
+		0409B9131C479A2E00910DF7 /* HMBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409B9121C479A2E00910DF7 /* HMBarChartView.m */; };
+		0453BB831C4887F600C01796 /* HMBrokenlineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453BB821C4887F600C01796 /* HMBrokenlineChartView.m */; };
+		0453BB8F1C488D3600C01796 /* HMPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453BB8E1C488D3600C01796 /* HMPieChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,18 @@
 		0409B8FF1C4794BD00910DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0409B9021C4794BD00910DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0409B9041C4794BD00910DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0409B90B1C47951F00910DF7 /* HMChartBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMChartBackgroundView.h; sourceTree = "<group>"; };
+		0409B90C1C47951F00910DF7 /* HMChartBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMChartBackgroundView.m; sourceTree = "<group>"; };
+		0409B90E1C4797FB00910DF7 /* HMEndPointButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMEndPointButton.h; sourceTree = "<group>"; };
+		0409B90F1C4797FB00910DF7 /* HMEndPointButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMEndPointButton.m; sourceTree = "<group>"; };
+		0409B9111C479A2E00910DF7 /* HMBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMBarChartView.h; sourceTree = "<group>"; };
+		0409B9121C479A2E00910DF7 /* HMBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMBarChartView.m; sourceTree = "<group>"; };
+		0409B9141C479A7200910DF7 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		0453BB811C4887F600C01796 /* HMBrokenlineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMBrokenlineChartView.h; sourceTree = "<group>"; };
+		0453BB821C4887F600C01796 /* HMBrokenlineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMBrokenlineChartView.m; sourceTree = "<group>"; };
+		0453BB841C48886A00C01796 /* HMChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMChartView.h; sourceTree = "<group>"; };
+		0453BB8D1C488D3600C01796 /* HMPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPieChartView.h; sourceTree = "<group>"; };
+		0453BB8E1C488D3600C01796 /* HMPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPieChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 		0409B8F21C4794BD00910DF7 /* HMChart */ = {
 			isa = PBXGroup;
 			children = (
+				0409B90A1C4794D900910DF7 /* HMChart */,
 				0409B8F61C4794BD00910DF7 /* AppDelegate.h */,
 				0409B8F71C4794BD00910DF7 /* AppDelegate.m */,
 				0409B8F91C4794BD00910DF7 /* ViewController.h */,
@@ -77,6 +95,25 @@
 				0409B8F41C4794BD00910DF7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0409B90A1C4794D900910DF7 /* HMChart */ = {
+			isa = PBXGroup;
+			children = (
+				0453BB841C48886A00C01796 /* HMChartView.h */,
+				0409B9141C479A7200910DF7 /* Config.h */,
+				0409B90B1C47951F00910DF7 /* HMChartBackgroundView.h */,
+				0409B90C1C47951F00910DF7 /* HMChartBackgroundView.m */,
+				0409B90E1C4797FB00910DF7 /* HMEndPointButton.h */,
+				0409B90F1C4797FB00910DF7 /* HMEndPointButton.m */,
+				0409B9111C479A2E00910DF7 /* HMBarChartView.h */,
+				0409B9121C479A2E00910DF7 /* HMBarChartView.m */,
+				0453BB811C4887F600C01796 /* HMBrokenlineChartView.h */,
+				0453BB821C4887F600C01796 /* HMBrokenlineChartView.m */,
+				0453BB8D1C488D3600C01796 /* HMPieChartView.h */,
+				0453BB8E1C488D3600C01796 /* HMPieChartView.m */,
+			);
+			path = HMChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0409B9131C479A2E00910DF7 /* HMBarChartView.m in Sources */,
+				0409B90D1C47951F00910DF7 /* HMChartBackgroundView.m in Sources */,
 				0409B8FB1C4794BD00910DF7 /* ViewController.m in Sources */,
+				0453BB8F1C488D3600C01796 /* HMPieChartView.m in Sources */,
 				0409B8F81C4794BD00910DF7 /* AppDelegate.m in Sources */,
+				0453BB831C4887F600C01796 /* HMBrokenlineChartView.m in Sources */,
+				0409B9101C4797FB00910DF7 /* HMEndPointButton.m in Sources */,
 				0409B8F51C4794BD00910DF7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +340,7 @@
 				0409B9091C4794BD00910DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
